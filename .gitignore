@@ -1,0 +1,47 @@
+# -----------------------------------------------
+# PERTE VEC1 — Evaluación de Impacto
+# .gitignore — archivos excluidos del repositorio
+# -----------------------------------------------
+
+# Datos (nunca se suben microdatos ni datos sensibles)
+data/raw/
+data/processed/
+data/external/
+
+# Archivos temporales de Office
+~$*.docx
+~$*.xlsx
+~$*.pptx
+*.tmp
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Entornos R
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# Entornos Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.venv/
+venv/
+
+# Stata
+*.log
+*.smcl
+*.stswp
+
+# Outputs intermedios grandes (conservar solo versiones finales)
+outputs/tablas/*.csv
+outputs/figuras/*.png
+
+# Excepciones: sí se suben los outputs finales en PDF y Excel
+!outputs/tablas/*.xlsx
+!outputs/figuras/*.pdf
